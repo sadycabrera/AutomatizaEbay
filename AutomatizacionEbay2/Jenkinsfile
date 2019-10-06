@@ -1,0 +1,10 @@
+node{
+stage ('SCM CheckOut')
+{
+git 'https://github.com/sadycabrera/AutomatizaEbay'
+}
+stage ('Compile-Package')
+{
+sh 'mvn package'
+}
+}
